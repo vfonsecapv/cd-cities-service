@@ -1,0 +1,8 @@
+---
+applications:
+- name: cd-cities-service-victor
+  memory: 512M
+  path: build/libs/cities-service-0.0.1-SNAPSHOT.jar
+  services: [ cities-mysql ]
+env:
+  SPRING_PROFILES_ACTIVE: cloud
